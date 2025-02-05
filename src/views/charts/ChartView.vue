@@ -4,12 +4,12 @@
       <ChartItem v-if="chartData" :chart-type="chartType" :chart-data="chartData" />
       <p v-else>Ładowanie danych...</p>
     </div>
-  </template>
+</template>
   
   <script setup>
   import { ref, watch, onMounted } from "vue";
   import { useRoute } from "vue-router";
-  import ChartItem from "../components/Items/ChartItem.vue";
+  import ChartItem from "@/components/Items/ChartItem.vue";
   
   const route = useRoute();
   const chartType = ref(route.params.chartType || "bar"); // Domyślny typ, gdyby `route.params.chartType` było `undefined`

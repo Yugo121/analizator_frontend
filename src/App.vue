@@ -15,14 +15,19 @@ import { RouterLink, RouterView } from 'vue-router'
             <li class="nav-item">
               <RouterLink class="nav-link active" aria-current="page" to="/">Home</RouterLink>
             </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link active" aria-current="page" to="/marginCalc">Margin calculator</RouterLink>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Charts
               </a>
               <ul class="dropdown-menu">
-                <li><RouterLink class="dropdown-item" to="/chart/bar">Bar</RouterLink></li>
-                <li><RouterLink class="dropdown-item" to="/chart/line">Line</RouterLink></li>
-                <li><RouterLink class="dropdown-item" to="/chart/doughnut">Ponczus</RouterLink></li>
+                <li><RouterLink class="dropdown-item" to="/clients">Clients</RouterLink></li>
+                <li><RouterLink class="dropdown-item" to="/products">Products</RouterLink></li>
+                <li><RouterLink class="dropdown-item" to="/orders">Orders</RouterLink></li>
+                <li><RouterLink class="dropdown-item" to="/markets">Markets</RouterLink></li>
+                <li><RouterLink class="dropdown-item" to="/couriers">Couriers</RouterLink></li>
               </ul>
             </li>
             <li class="nav-item">
