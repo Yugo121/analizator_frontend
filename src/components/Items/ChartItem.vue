@@ -11,7 +11,7 @@
 
 <script>
 import { Chart, registerables } from 'chart.js';
-import { BarChart, LineChart, DoughnutChart, PieChart, RadarChart } from 'vue-chart-3';
+import { BarChart, LineChart, DoughnutChart, PieChart, RadarChart, PolarAreaChart } from 'vue-chart-3';
 
 Chart.register(...registerables);
 
@@ -21,7 +21,8 @@ export default {
     LineChart,
     DoughnutChart,
     PieChart,
-    RadarChart
+    RadarChart,
+    PolarAreaChart
   },
   props: {
     chartType: {
@@ -44,7 +45,8 @@ export default {
         line: LineChart,
         doughnut: DoughnutChart,
         pie: PieChart,
-        radar: RadarChart
+        radar: RadarChart,
+        polar: PolarAreaChart
       };
       return chartMap[this.chartType] || null;
     }
